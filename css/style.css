@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+  padding: 10px;
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .box {
+    position: relative;
+    display: inline-block;
+  }
+
+  .box .discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: green;
+  }
+
+  .box:nth-child(even) .discount {
+    background-color: red;
+  }
+
+  .box .heart {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  color: red;
+  text-align: center;
+  display: none;
+  }
